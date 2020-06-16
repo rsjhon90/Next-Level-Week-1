@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/serverindex.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "homepage": "https://github.com/rsjhon90/Next-Level-Week-1#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
