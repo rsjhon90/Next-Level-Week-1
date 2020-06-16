@@ -1,0 +1,21 @@
+{
+  "name": "Next-Level-Week-1",
+  "version": "1.0.0",
+  "main": "src/serverindex.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsjhon90/Next-Level-Week-1.git"
+  },
+  "author": "Jony Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsjhon90/Next-Level-Week-1/issues"
+  },
+  "homepage": "https://github.com/rsjhon90/Next-Level-Week-1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
