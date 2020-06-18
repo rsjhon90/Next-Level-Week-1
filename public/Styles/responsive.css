@@ -22,7 +22,20 @@
     /* #page-search-results .cards{
         align-items: center;
     } */
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 
 @media (max-height: 760px) {
     #page-home {
