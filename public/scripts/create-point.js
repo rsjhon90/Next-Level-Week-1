@@ -50,6 +50,7 @@ document
 // Itens de coleta
 // Pegar todos os li's
 const itemsToCollect = document.querySelectorAll(".items-grid")
+
 for (const item of itemsToCollect) {
     item.addEventListener("click", handleSelectedItem)
 }

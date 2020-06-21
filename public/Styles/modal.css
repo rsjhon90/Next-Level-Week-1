@@ -95,3 +95,17 @@
 #modal form button:hover {
     background-color: var(--hover-color);
 }
+
+/* Isto é para o modal point-created.html */
+#modal.point-created .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point-created .content h1 {
+    color: white;
+
+    margin-top: 48px;
+}
+
