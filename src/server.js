@@ -1,6 +1,9 @@
 const express = require("express") // importa library express
 const server = express()
 
+// pegar o banco de dados
+const db = require(".database/db")
+
 //configurar pasta pública
 server.use(express.static("public"))
 
