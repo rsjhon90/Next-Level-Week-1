@@ -64,13 +64,14 @@ server.post("/savepoint", (req, res) => {
 
     function afterInsertData(err) {
         if (err) {
-            return console.log(err)
+            console.log(err)
+            return res.send("Erro no cadastro")
         }
 
         console.log("Cadastrado com sucesso")
         console.log(this)
 
-        return res.render("create-point", { saved: true })
+        return res.render("create-point.html", { saved:true })
     }
 
     db.run(query, values, afterInsertData)
@@ -82,6 +83,8 @@ server.post("/savepoint", (req, res) => {
 
 server.get("/search-results", (req, res) => {
 
+
+    //pegar os dados do banco de dados
     db.all(`SELECT * FROM places`, function (err, rows) {
         if (err) {
             return console.log(err)
